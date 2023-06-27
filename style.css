@@ -1,7 +1,6 @@
 .form {
   display: flex;
   flex-direction: column;
-  /* width: 500px; */
   border: 1px solid black;
   padding: 1rem;
 }
@@ -13,8 +12,14 @@
 .confirmPasswordSection {
     display: flex;
     flex-direction: column;
+    position: relative;
     width: 300px;
     gap: 0.25rem;
+    font-weight: 900;
+}
+
+input {
+    margin-bottom: 0.5rem;;
 }
 
 button {
@@ -25,11 +30,29 @@ button {
     margin-top: 1rem;
 }
 
-.error-mail,
-.error-country,
-.error-zip,
-.error-password,
-.error-confirm {
-    color: red;
+button:hover {
+    background-color: green;
+    color: white;
 }
 
+.error-mail.valid,
+.error-country.valid,
+.error-zip.valid,
+.error-password.valid,
+.error-confirm.valid {
+    color: green;
+}
+
+.error-mail.invalid,
+.error-country.invalid,
+.error-zip.invalid,
+.error-password.invalid,
+.error-confirm.invalid {
+    color: red;
+}
+span {
+    position: absolute;
+    left: 20rem;
+    top: 1.4rem;
+    width: 500px;
+}
