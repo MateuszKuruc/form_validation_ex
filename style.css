@@ -1,4 +1,35 @@
 .form {
+  display: flex;
+  flex-direction: column;
+  /* width: 500px; */
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.emailSection,
+.countrySection,
+.zipSection,
+.passwordSection,
+.confirmPasswordSection {
     display: flex;
     flex-direction: column;
+    width: 300px;
+    gap: 0.25rem;
 }
+
+button {
+    width: 150px;
+    padding: 1rem;
+    font-weight: 900;
+    font-size: 16px;
+    margin-top: 1rem;
+}
+
+.error-mail,
+.error-country,
+.error-zip,
+.error-password,
+.error-confirm {
+    color: red;
+}
+

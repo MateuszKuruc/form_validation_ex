@@ -11,14 +11,30 @@
     <div class="form">
       <form>
         <div class="emailSection">
-          <label for="email">Email</label>
+          <label for="email">* Email</label>
           <input type="text" id="email" />
           <span class="error-mail"></span>
         </div>
-        <label for="country">Country</label>
-        <input type="text" id="country" />
-        <span class="error-country"></span>
-
+        <div class="countrySection">
+          <label for="country">* Country</label>
+          <input type="text" id="country" />
+          <span class="error-country"></span>
+        </div>
+        <div class="zipSection">
+          <label for="zip">* ZIP code</label>
+          <input type="text" id="zip" />
+          <span class="error-zip"></span>
+        </div>
+        <div class="passwordSection">
+          <label for="password">* Password</label>
+          <input type="text" id="password" />
+          <span class="error-password"></span>
+        </div>
+        <div class="confirmPasswordSection">
+          <label for="confirmPassword">* Confirm password</label>
+          <input type="text" id="confirmPassword" />
+          <span class="error-confirm"></span>
+        </div>
         <button>Submit</button>
       </form>
     </div>
